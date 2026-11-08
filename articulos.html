@@ -49,7 +49,7 @@
         padding: 0 20px;
         display: flex;
         flex-direction: column;
-        gap: 40px; /* Espaciado elegante entre un artículo y otro */
+        gap: 40px;
       }
 
       .articulo-block {
@@ -58,7 +58,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         padding: 30px;
         border-top: 5px solid #b38f43;
-        scroll-margin-top: 20px; /* Margen superior al hacer scroll por ID */
+        scroll-margin-top: 20px;
       }
 
       .articulo-titulo {
@@ -126,18 +126,16 @@
         transform: translateY(0);
       }
 
-      /* Optimización para pantallas móviles */
       @media (max-width: 768px) {
         .pdf-preview-container {
           height: 450px;
         }
       }
 
-      /* --- ESPACIADO INFERIOR PARA EVITAR EL COLAPSO CON EL FOOTER --- */
       .container-regresar-home {
         text-align: center;
         margin-top: 40px;
-        margin-bottom: 60px; /* 📌 Esto empuja el footer hacia abajo dándole "aire" a la página */
+        margin-bottom: 60px;
         width: 100%;
         display: block;
       }
@@ -200,7 +198,6 @@
           <i class="fa-solid fa-users"></i>
         </a>
 
-        <!-- Enlace modificado: reemplazado mailto por la función del modal -->
         <a
           href="javascript:void(0)"
           onclick="openEmailModal()"
@@ -210,7 +207,6 @@
           <i class="fa-solid fa-envelope"></i>
         </a>
 
-        <!-- Botón del Buscador -->
         <button
           class="tab-btn btn-search-trigger"
           onclick="openSearchModal()"
@@ -220,7 +216,7 @@
         </button>
       </div>
 
-      <!-- MODAL DEL BUSCADOR INTEGRADO -->
+      <!-- MODAL DEL BUSCADOR -->
       <div
         id="modal-buscador"
         class="search-modal-overlay"
@@ -253,7 +249,7 @@
         </div>
       </div>
 
-      <!-- MODAL DE SELECCIÓN DE CORREO -->
+      <!-- MODAL DE CORREO -->
       <div
         id="modal-contacto-email"
         class="modal-email-overlay"
@@ -275,7 +271,6 @@
           </p>
 
           <div class="opciones-email-grid">
-            <!-- Gmail Web -->
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=monedasmacuquinas@yahoo.com"
               target="_blank"
@@ -285,8 +280,6 @@
               <i class="fa-brands fa-google"></i>
               <span>Gmail</span>
             </a>
-
-            <!-- Outlook / Hotmail Web -->
             <a
               href="https://outlook.live.com/mail/0/deeplink/compose?to=monedasmacuquinas@yahoo.com"
               target="_blank"
@@ -296,8 +289,6 @@
               <i class="fa-brands fa-microsoft"></i>
               <span>Outlook / Hotmail</span>
             </a>
-
-            <!-- Yahoo Mail Web -->
             <a
               href="https://mail.yahoo.com/d/compose-message?to=monedasmacuquinas@yahoo.com"
               target="_blank"
@@ -307,8 +298,6 @@
               <i class="fa-brands fa-yahoo"></i>
               <span>Yahoo Mail</span>
             </a>
-
-            <!-- Aplicación Predeterminada del sistema -->
             <a
               href="mailto:monedasmacuquinas@yahoo.com"
               class="btn-email-option default"
@@ -328,32 +317,9 @@
           <img src="assets/img/img (13).jpeg" alt="Nota 4" />
           <img src="assets/img/img (17).jpg" alt="Nota 5" />
           <img src="assets/img/img (1).png" alt="Nota 6" />
-          <img src="assets/img/img (28).jpg" alt="Nota 1" />
-          <img src="assets/img/img (29).jpg" alt="Nota 2" />
-          <img src="assets/img/img (40).jpg" alt="Nota 1" />
-          <img src="assets/img/img (20).jpg" alt="Nota 1" />
-          <img src="assets/img/img (21).jpg" alt="Nota 1" />
-          <img src="assets/img/img (22).jpg" alt="Nota 1" />
-          <img src="assets/img/img (23).jpg" alt="Nota 1" />
-          <img src="assets/img/img (24).jpg" alt="Nota 1" />
-          <img src="assets/img/img (25).jpg" alt="Nota 1" />
-          <img src="assets/img/img (26).jpg" alt="Nota 1" />
-          <img src="assets/img/img (6).jpeg" alt="Nota 1" />
-          <img src="assets/img/img (11).jpeg" alt="Nota 2" />
-          <img src="assets/img/img (12).jpeg" alt="Nota 3" />
-          <img src="assets/img/img (13).jpeg" alt="Nota 4" />
-          <img src="assets/img/img (17).jpg" alt="Nota 5" />
-          <img src="assets/img/img (1).png" alt="Nota 6" />
-          <img src="assets/img/img (2).jpeg" alt="Nota 1" />
-          <img src="assets/img/img (2).png" alt="Nota 2" />
-          <img src="assets/img/img (32).jpg" alt="Nota 1" />
-          <img src="assets/img/img (33).jpg" alt="Nota 1" />
-          <img src="assets/img/img (34).jpg" alt="Nota 1" />
-          <img src="assets/img/img (35).jpg" alt="Nota 1" />
-          <img src="assets/img/img (36).jpg" alt="Nota 1" />
-          <img src="assets/img/img (37).jpg" alt="Nota 1" />
-          <img src="assets/img/img (38).jpg" alt="Nota 1" />
-          <img src="assets/img/img (39).jpg" alt="Nota 1" />
+          <img src="assets/img/img (28).jpg" alt="Nota 7" />
+          <img src="assets/img/img (29).jpg" alt="Nota 8" />
+          <img src="assets/img/img (40).jpg" alt="Nota 9" />
         </div>
       </div>
 
@@ -657,7 +623,7 @@
           </div>
           <div class="pdf-preview-container">
             <iframe
-              src="https://docs.google.com/gview?url=https://monedasmacuquinas.com/assets/docs/Numismatica_2026.pdf&embedded=true"
+              src="https://docs.google.com/gview?url=https://monedasmacuquinas.com/assets/docs/numismatica_2026.pdf&embedded=true"
             ></iframe>
           </div>
           <button
@@ -701,8 +667,6 @@
           &times;
         </button>
         <h3 class="modal-conversores-title">Menús de Conversión</h3>
-
-        <!-- Aquí nav_footer.js inyectará automáticamente las 3 barras -->
         <div
           id="conversor-flotante-dinamico"
           class="modal-conversores-bars-container"
@@ -715,8 +679,6 @@
 
     <!-- Cargar base de datos de búsqueda -->
     <script src="assets/js/datos-busqueda.js"></script>
-
-    <!-- Cargar funciones JS generales -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/nav-footer.js"></script>
     <script src="assets/js/ponencias.js"></script>
